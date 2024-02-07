@@ -1,7 +1,20 @@
 {
   "browser_specific_settings": {
     "gecko": {
-      "id": "sponsorBlocker@ajay.app"
+      "id": "sponsorBlocker@ajay.app",
+      "strict_min_version": "56.0"
+    },
+    "gecko_android": {
+      "strict_min_version": "113.0"
     }
+  },
+  "background": {
+    "persistent": false
+  },
+  "permissions": [
+    "scripting"
+  ],
+  "browser_action": {
+    "default_area": "navbar"
   }
 }

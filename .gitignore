@@ -7,3 +7,6 @@ web-ext-artifacts
 dist/
 tmp/
 .DS_Store
+ci/invidious_instances.json
+ci/piped_instances.json
+test-results

@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://sponsor.ajay.app"><img src="public/icons/LogoSponsorBlocker256px.png" alt="Logo"></img></a>
-  
+
   <br/>
   <sub>Logo by <a href="https://github.com/munadikieh">@munadikieh</a></sub>
 </p>
@@ -13,7 +13,7 @@
   <a href="https://addons.mozilla.org/addon/sponsorblock/?src=external-github">Firefox</a> |
   <a href="https://github.com/ajayyy/SponsorBlock/wiki/Android">Android</a> |
   <a href="https://github.com/ajayyy/SponsorBlock/wiki/Edge">Edge</a> |
-  <a href="https://github.com/ajayyy/SponsorBlock/wiki/Safari">Safari for MacOS</a> |
+  <a href="https://github.com/ajayyy/SponsorBlock/wiki/Safari">Safari for MacOS and iOS</a> |
   <a href="https://sponsor.ajay.app">Website</a> |
   <a href="https://sponsor.ajay.app/stats">Stats</a>
 </p>
@@ -38,7 +38,7 @@
 
 SponsorBlock is an open-source crowdsourced browser extension to skip sponsor segments in YouTube videos. Users submit when a sponsor happens from the extension, and the extension automatically skips sponsors it knows about. It also supports skipping other categories, such as intros, outros and reminders to subscribe.
 
-It also supports Invidio.us.
+It also supports Invidious.
 
 **Translate:** [![Crowdin](https://badges.crowdin.net/sponsorblock/localized.svg)](https://crowdin.com/project/sponsorblock)
 
@@ -56,41 +56,14 @@ The dataset and API are now being used in some [ports](https://github.com/ajayyy
 
 # API
 
-You can read the API docs [here](https://wiki.sponsor.ajay.app/index.php/API_Docs).
+You can read the API docs [here](https://wiki.sponsor.ajay.app/w/API_Docs).
 
 # Building
-
-Rename `config.json.example` to `config.json` and adjust configuration as desired.
-
-There are also other build scripts available. Install `npm`, then run `npm install` in the repository to install dependencies. 
-
-Run `npm run build` to generate a Chrome extension.
-
-Use `npm run build:firefox` to generate a Firefox extension.
-
-The result is in `dist`. This can be loaded as an unpacked extension
-
-## Developing with a clean profile
-
-Run `npm run dev` to run the extension using a clean browser profile with hot reloading. Use `npm run dev:firefox` for Firefox. This uses [`web-ext run`](https://extensionworkshop.com/documentation/develop/web-ext-command-reference/#commands).  
-Known chromium bug: Extension is not loaded properly on first start. Visit `chrome://extensions/` and reload the extension.
-
-For Firefox for Android, use `npm run dev:firefox-android -- --adb-device <ip-address of the device>`. See the [Firefox documentation](https://extensionworkshop.com/documentation/develop/developing-extensions-for-firefox-for-android/#debug-your-extension) for more information.
-
-### Attribution Generation
-
-If you contribute and add a dependency, update the attribution file using the following steps:
-
-Make sure the attribution generator is installed: `npm i -g oss-attribution-generator`
-
-```bash
-generate-attribution
-mv ./oss-attribution/attribution.txt ./public/oss-attribution/attribution.txt
-```
+See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 # Credit
 
-The awesome [Invidious API](https://docs.invidious.io/API.md) was previously used, and the server is now using [NewLeaf](https://git.sr.ht/~cadence/NewLeaf) as a to get video info from YouTube.
+The awesome [Invidious API](https://docs.invidious.io/) was previously used, and the server is now using [NewLeaf](https://git.sr.ht/~cadence/NewLeaf) as a to get video info from YouTube.
 
 Originally forked from [YTSponsorSkip](https://github.com/NDevTK/YTSponsorSkip), but very little code remains.
 
